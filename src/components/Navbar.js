@@ -11,7 +11,7 @@ export default function Navbar() {
        const image = "https://xobpoebtsusxzvfqpchs.supabase.co/storage/v1/object/sign/Data%20for%20portfolio/Vinay_profilefpic.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJEYXRhIGZvciBwb3J0Zm9saW8vVmluYXlfcHJvZmlsZWZwaWMuanBnIiwiaWF0IjoxNzAyNDA4Mjc3LCJleHAiOjIwMTc3NjgyNzd9.8tv0GuwC2ISsxPp20ELBIGbFzn5EbrCNBEn_MT9AOtg&t=2023-12-12T19%3A11%3A18.173Z"
   }
   return (
-    <div className="navbar flex max-w-screen-lg m-auto justify-between mt-4 items-center">
+    <div className="navbar flex max-w-screen  m-auto justify-around pt-4 items-center  ">
       <div href="/">
         <div className="text-2xl font-bold italic opacity-100 leading-10 flex gap-2 items-center hover:cursor-pointer">
           <img
@@ -26,7 +26,7 @@ export default function Navbar() {
         <ul className="flex gap-10">
           {navlinks.map((link) => {
             return (
-              <li className="leading-10 items-center text-lg leading-10 hover:cursor-pointer hover:text-blue-600">
+              <li className="leading-10 items-center text-lg leading-10 hover:cursor-pointer hover:text-[ivory]">
                 {link}
               </li>
             );
@@ -38,6 +38,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer"
               onClick={downloadHandler}
+              
             >
               Resume
             </a>

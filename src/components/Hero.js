@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="max-w-screen-lg mx-auto text-center">
+    <div className="max-w-screen-lg mx-auto text-center h-[93vh] flex items-center">
       <div className="flex flex-col gap-3 py-12">
         <h1 className="text-4xl font-medium ">Hey, I'm Vinay Bhoure</h1>
         <p className="text-2xl">A Mern Stack Developer</p>

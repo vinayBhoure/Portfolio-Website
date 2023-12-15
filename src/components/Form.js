@@ -1,11 +1,17 @@
 import React from "react";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function Form() {
+  
+  const form = useRef();
+
   const [formData, setFormData] = useState({
-    fullname: "",
-    email: "",
+    from_name: "",
+    from_email: "",
+    message: "",
   });
 
   function changeHandler(e) {
@@ -17,39 +23,73 @@ export default function Form() {
 
   function submitHandler(e) {
     e.preventDefault();
-    toast.success("Form Submitted Successfully");
+
+    emailjs
+      .sendForm(
+        "service_r5akwed",
+        "template_trvccmq",
+        form.current,
+        "CbzwImZgAeuvjdVhK"
+      )
+      .then(
+        (result) => {
+          toast.success("Form Submitted Successfully");
+          console.log(result.text);
+        },
+        (error) => {
+          toast.error("Form Submission Failed");
+          console.log(error.text);
+        }
+      );
+
     console.log(formData);
     setFormData({
-      fullname: "",
-      email: "",
+      from_name: "",
+      from_email: "",
+      message: "",
     });
   }
 
   return (
     <div className="">
-      <form onSubmit={submitHandler} className="flex flex-col">
+      <form ref={form} onSubmit={submitHandler} className="flex flex-col text-center">
         <input
-          type="Full Name"
+          type="text"
           required
-          name="fullname"
-          placeholder="Full Name"
+          name="from_name"
+          placeholder="enter your full name"
           onChange={changeHandler}
-          value={formData.fullname}
-          className="w-full border rounded-md p-2 "
+          value={formData.from_name}
+          className="w-full border rounded-md p-2 bg-slate-100 "
         />
-        <br/>
+        <br />
         <input
           type="email"
           required
-          name="email"
-          placeholder="Email Address"
+          name="from_email"
+          placeholder="eg: xyz@gmail.com"
           onChange={changeHandler}
-          value={formData.email}
-          className="w-full border rounded-md p-2"
-        /><br/>
+          value={formData.frofromail}
+          className="w-full border rounded-md p-2 bg-slate-100 "
+        />
+        <br />
+        <textarea
+          type="text"
+          name="message"
+          required
+          placeholder="write your message here"
+          onChange={changeHandler}
+          value={formData.message}
+          className="w-full border rounded-md p-2 resize-none bg-slate-100 "
 
-        <button className="w-full bg-blue-400 rounded-md p-2 text-lg font-bond text-white opacuty-90
-        active:bg-blue-600">Submit</button>
+        />
+        <br />
+        <button
+          className="w-full bg-blue-400 rounded-md p-2 text-lg font-bond text-white opacuty-90
+        active:bg-blue-600"
+        >
+          Submit
+        </button>
       </form>
     </div>
   );
