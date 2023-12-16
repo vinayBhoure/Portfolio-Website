@@ -10,7 +10,7 @@ export default function RunningProject() {
       </div>
 
       <div className="h-1 w-[100px] bg-blue-500 my-5"></div>
-
+      {/* project content👇 */}
       <div className="flex gap-5">
         <div className="p-3 w-1/2">
           <div>
@@ -31,7 +31,6 @@ export default function RunningProject() {
             <p className="opacity-50 text-base font-bold">date</p>
           </div>
         </div>
-
       </div>
     </div>
   );

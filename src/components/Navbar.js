@@ -13,20 +13,20 @@ export default function Navbar() {
   return (
     <div className="navbar flex max-w-screen  m-auto justify-around pt-4 items-center  ">
       <div href="/">
-        <div className="text-2xl font-bold italic opacity-100 leading-10 flex gap-2 items-center hover:cursor-pointer">
+        <div className="text-2xl font-bold italic leading-10 flex gap-2 items-center hover:cursor-pointer">
           <img
             src={profilepic}
             alt="profilepic"
-            className="w-12 rounded-full border-[3px] border-blue-600"
+            className="w-12 rounded-full border-[3px] border-blue-600 hover:opacity-80"
           />
-          <p className="opacity-70">Vinay Bhoure</p>
+          <p className="opacity-90 hover:opacity-60">Vinay Bhoure</p>
         </div>
       </div>
       <div className="">
         <ul className="flex gap-10">
           {navlinks.map((link) => {
             return (
-              <li className="leading-10 items-center text-lg leading-10 hover:cursor-pointer hover:text-[ivory]">
+              <li className=" font-semibold text-blue-950 transition delay-100 uppercase leading-10 items-center text-lg leading-10 hover:cursor-pointer hover:text-[ivory]">
                 {link}
               </li>
             );

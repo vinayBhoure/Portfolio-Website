@@ -44,17 +44,17 @@ export const experienceArr = [
 export const projectArr = [
   {
     image: Github,
-    name: "Portfolio (vinaybhoure.netliffy.app)",
-    description: "this is place where i show case my skills and experience",
-    githubURL:"",
+    name: "Slack Clone",
+    description: "chat application with google authentication and real time chat functionality",
+    githubURL:"https://github.com/vinayBhoure/Slack-Clone",
     livedemo:"",
   },
   {
     image: Github,
-    name: "Zepto Clone (zepto.netlify.app)",
+    name: "Portfolio",
     description:
-      "Zepto is your next-door quick commerce app, delivering online groceries,fruits,vegetables, personal care, electronics & much more to you in just minutes.",
-      githubURL:"",
+      "A portfolio website built using React and Tailwind CSS. It is a responsive website that works on all devices.",
+      githubURL:"https://github.com/vinayBhoure/Portfolio",
       livedemo:"",
   }
 ];

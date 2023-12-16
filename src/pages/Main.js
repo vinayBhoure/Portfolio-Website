@@ -9,7 +9,7 @@ import Hero from "../components/Hero";
 
 export default function Main() {
   return (
-    <div className="main ">
+    <div className="main">
     <Hero/>
       <Skill />
       <WorkExperience />

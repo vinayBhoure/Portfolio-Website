@@ -1,19 +1,32 @@
 import React from "react";
+import vectorImg from "../assets/vectorImg.jpg";
+import picofme from '../assets/picofme.jpg'
 
 export default function Hero() {
   return (
-    <div className="max-w-screen-lg mx-auto text-center h-[93vh] flex items-center">
-      <div className="flex flex-col gap-3 py-12">
-        <h1 className="text-4xl font-medium ">Hey, I'm Vinay Bhoure</h1>
-        <p className="text-2xl">A Mern Stack Developer</p>
-        <p className="text-2xl italic">
-          As a thank you for pre-ordering my book, I'll be giving you an
-          exclusive ticket to The Feel-Good Productivity Annual Planning
-          Workshop. Let's make 2024 the best year of your life
-        </p>
+    <div className="max-w-screen-lg mx-auto h-[93vh] flex flex-col">
+      {/* div for upper body 👇 */}
+      <div className="flex  items-center relative basis-1/2">
+        <div className="ml-14">
+          <h1>Full Stack Developer</h1>
+          <p>Creating Seamless and innovative solutions</p>
+          <button className="bg-blue-400 rounded-lg ">Contact us</button>
+        </div>
+
+        <div className="absolute top-[55px] right-[-55px]">
+          <img
+            src={picofme}
+            alt="vinay bhoure"
+            className="rounded-[50%] max-h-[70%] max-w-[70%] "
+          />
+        </div>
       </div>
-      <div>
-        {/* <img src={no} alt="hero"/> */}
+      {/* div for lower bopdy 👇*/}
+      <div className="basis-1/2 flex items-center">
+        <div className="basis-1/2">
+          <img src={vectorImg} alt="vector-img" className="" />
+        </div>
+        <div></div>
       </div>
     </div>
   );

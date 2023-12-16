@@ -5,7 +5,7 @@ import { skillsArr } from "../assets/data";
 export default function Skill() {
 
   return (
-    <div className=" max-w-screen-lg m-auto">
+    <div className=" max-w-screen-lg m-auto my-5">
       <div >
         <p className="text-slate-900 text-2xl font-bold">Skills I Work On</p>
       </div>

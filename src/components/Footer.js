@@ -9,8 +9,8 @@ import { PiCopyright } from "react-icons/pi";
 
 export default function Footer() {
   return (
-    <div className="">
-      <div className="flex mx-auto max-w-screen-lg p-3 my-5 gap-9 border-t">
+    <div className="mt-5">
+      <div className="flex mx-auto max-w-screen-lg p-5 gap-9 border-t ">
         <div className="w-1/2">
           <h1 className="text-3xl font-bold">Contact me</h1>
           <p className="text-lg py-2"> "Your emails always warm the cockles of my heart"</p>
@@ -25,6 +25,8 @@ export default function Footer() {
           <Form />
         </div>
       </div>
+
+      {/* black portion */}
       <div className="bg-black text-white flex justify-around py-12">
         <p className="text-md relative">
           <PiCopyright className="absolute top-[6px] left-[-18px]" />
