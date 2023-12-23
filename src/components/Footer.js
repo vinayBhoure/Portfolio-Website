@@ -11,14 +11,22 @@ export default function Footer() {
   return (
     <div className="mt-5">
       <div className="flex mx-auto max-w-screen-lg p-5 gap-9 border-t ">
-        <div className="w-1/2">
+        <div className="w-1/2 flex flex-col">
           <h1 className="text-3xl font-bold">Contact me</h1>
-          <p className="text-lg py-2"> "Your emails always warm the cockles of my heart"</p>
-          <p className="text-lg">
-            Join a growing community of more than 412,000 (🤯) friendly readers.
-            Every Sunday I share actionable productivity tips, practical life
-            advice, and high-quality insights from across the web, directly to
-            your inbox
+          {/* <p className="text-lg py-2 italic"> "Unlock the digital potential for your business with just one click your customized solution is just an email away."</p> */}
+
+          <p className="text-md py-2 mb-3 italic">
+            {" "}
+            "Get the perfect digital solution for your business by sending us an
+            email. We're just one message away!!"
+          </p>
+          <p className="text-md pb-1">
+            Need web solutions? Contact us! We specialize in transforming
+            digital goals into reality, enhancing online presence, and
+            optimizing business processes.{" "}
+            <span className="font-semibold">
+              Contact us for a seamless journey to digital success.
+            </span>
           </p>
         </div>
         <div className="w-1/2">
@@ -28,50 +36,51 @@ export default function Footer() {
 
       {/* black portion */}
       <div className="bg-black text-white flex justify-around py-12">
-        <p className="text-md relative">
-          <PiCopyright className="absolute top-[6px] left-[-18px]" />
+        <p className="text-md relative items-center flex">
+          <PiCopyright className="absolute top-[35%] left-[-7%]" />
           Vinay Bhoure 2024. All rights reserved.
         </p>
-        <ul className="flex gap-[15px]">
-          <li>
+
+        <ul className="flex justify-center gap-2">
+          <li className="border-2 border-white p-2 rounded-3xl">
             <a href="https://twitter.com/viinaystwt/" target="_blank">
               <abbr title="Twitter">
                 {" "}
-                <FaTwitter className="" />
+                <FaTwitter size={30} />
               </abbr>
             </a>
           </li>
-          <li>
+          <li className="border-2 border-white p-2 rounded-3xl">
             <a href="https://github.com/vinayBhoure/" target="_blank">
               <abbr title="Github">
                 {" "}
-                <FaGithub />
+                <FaGithub size={30} />
               </abbr>
             </a>
           </li>
-          <li>
+          <li className="border-2 border-white p-2 rounded-3xl">
             <a
               href="https://www.linkedin.com/in/vinay-bhoure-440b84216/"
               target="_blank"
             >
               <abbr title="Linkedin">
                 {" "}
-                <FaLinkedin />
+                <FaLinkedin size={30} />
               </abbr>
             </a>
           </li>
-          <li>
+          <li className="border-2 border-white p-2 rounded-3xl">
             <a href="#" target="_blank">
               <abbr title="Instagram">
-                <FaInstagram />
+                <FaInstagram size={30} />
               </abbr>
             </a>
           </li>
-          <li>
+          <li className="border-2 border-white p-2 rounded-3xl">
             <a href="https://leetcode.com/bhoure21/" target="_blank">
               <abbr title="Leetcode">
                 {" "}
-                <SiLeetcode />
+                <SiLeetcode size={30} />
               </abbr>
             </a>
           </li>

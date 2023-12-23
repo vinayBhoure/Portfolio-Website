@@ -57,7 +57,7 @@ export default function Form() {
           type="text"
           required
           name="from_name"
-          placeholder="enter your full name"
+          placeholder="Enter Full Name"
           onChange={changeHandler}
           value={formData.from_name}
           className="w-full border rounded-md p-2 bg-slate-100 "
@@ -67,7 +67,7 @@ export default function Form() {
           type="email"
           required
           name="from_email"
-          placeholder="eg: xyz@gmail.com"
+          placeholder="Eg: XYZ@gmail.com"
           onChange={changeHandler}
           value={formData.frofromail}
           className="w-full border rounded-md p-2 bg-slate-100 "
@@ -77,7 +77,7 @@ export default function Form() {
           type="text"
           name="message"
           required
-          placeholder="write your message here"
+          placeholder="Write your message here."
           onChange={changeHandler}
           value={formData.message}
           className="w-full border rounded-md p-2 resize-none bg-slate-100 "

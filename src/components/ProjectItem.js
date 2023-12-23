@@ -24,11 +24,11 @@ export default function ProjectItem({
         <div className="w-2/3">
           <a href={livedemo} target="_blank" >
             <abbr title="Live Demo" className="no-underline">
-              {" "}
+            
               <h3 className="text-slate-800 font-bold hover:text-blue-600">
-                {pname}
+                {pname} {<span>(Live Demo)</span>}
               </h3>
-            </abbr>{" "}
+            </abbr>
           </a>
           <p className="text-sm">{description}</p>
         </div>

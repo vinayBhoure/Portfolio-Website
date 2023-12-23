@@ -7,14 +7,16 @@ import Footer from "../components/Footer";
 import RunningProject from "../components/RunningProject";
 import Hero from "../components/Hero";
 
+import { skillCard, blogArr, runningProjectArr } from "../assets/data";
+
 export default function Main() {
   return (
     <div className="main">
-    <Hero/>
-      <Skill />
+      <Hero />
+      {skillCard.length > 0 && <Skill />}
       <WorkExperience />
-      <Blog />
-      <RunningProject/>
+      {blogArr.length > 0 && <Blog />}
+      {runningProjectArr.length > 0 && <RunningProject />}
       <About />
       <Footer />
     </div>

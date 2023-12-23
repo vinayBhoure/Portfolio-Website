@@ -8,6 +8,7 @@ function App() {
     <div className="App" style={{backgroundImage:`url(${wave})`, backgroundRepeat:`no-repeat`}}>
       <Navbar />
       <Main />
+
     </div>
   );
 }
