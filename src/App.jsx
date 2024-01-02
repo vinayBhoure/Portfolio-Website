@@ -5,7 +5,7 @@ import wave from './assets/wave.svg'
 
 function App() {
   return (
-    <div className="App" style={{backgroundImage:`url(${wave})`, backgroundRepeat:`no-repeat`}}>
+    <div className="App" style={{backgroundImage:`url(${wave})`, backgroundRepeat:`no-repeat`, overflow:`hidden`}}>
       <Navbar />
       <Main />
 

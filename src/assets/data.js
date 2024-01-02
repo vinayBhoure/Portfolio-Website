@@ -78,7 +78,7 @@ export const projectArr = [
     description:
       "chat application with google authentication and real time chat functionality",
     githubURL: "https://github.com/vinayBhoure/Slack-Clone",
-    livedemo: "https://www.w3schools.com/css/css_border_width.asp",
+    livedemo: "https://slack-clone-by-vinay.vercel.app/",
   },
   {
     image: Github,
@@ -86,7 +86,7 @@ export const projectArr = [
     description:
       "A portfolio website built using React and Tailwind CSS. It is a responsive website that works on all devices.",
     githubURL: "https://github.com/vinayBhoure/Portfolio",
-    livedemo: "https://vinaybhoure.vercel.app/",
+    livedemo: "https://vinaybhoure.me/",
   },
 ];
 
