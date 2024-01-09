@@ -78,7 +78,7 @@ export const projectArr = [
     description:
       "chat application with google authentication and real time chat functionality",
     githubURL: "https://github.com/vinayBhoure/Slack-Clone",
-    livedemo: "https://slack-clone-by-vinay.vercel.app/",
+    livedemo: "https://slack-clone-by-vinaybhoure.vercel.app/",
   },
   {
     image: Github,
